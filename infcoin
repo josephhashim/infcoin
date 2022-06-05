@@ -1,0 +1,38 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.671150267, 0, 0.855282187, 0)
+main.Size = UDim2.new(0, 396, 0, 100)
+main.Active = true
+main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = main
+Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Label.Size = UDim2.new(0, 337, 0, 50)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "made by deez nuts fit in your mouth"
+Label.TextColor3 = Color3.fromRGB(128, 0, 128)
+Label.TextSize = 14.000
+
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton.Size = UDim2.new(0, 322, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "INF COINS)"
+TextButton.TextColor3 = Color3.fromRGB(252, 2, 255)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer:Kick(Crash)
+end)
